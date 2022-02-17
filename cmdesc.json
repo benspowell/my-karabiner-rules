@@ -1,0 +1,25 @@
+{
+  "title": "",
+  "rules": [
+    {
+      "description": "cmd+esc to cmd+` ",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "modifiers": { "mandatory": ["left_gui"] },
+            "key_code": "escape"
+          },
+          "to": [
+            {
+              "repeat": false,
+              "key_code": "grave_accent_and_tilde",
+              "modifiers": ["left_gui"]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
