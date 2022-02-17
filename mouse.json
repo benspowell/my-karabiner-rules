@@ -1,0 +1,95 @@
+{
+  "title": "keyboard pointer controller",
+  "rules": [
+    {
+      "description": "up",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "up_arrow",
+            "modifiers": {
+              "mandatory": ["left_alt", "left_gui", "left_control"]
+            }
+          },
+          "to": [{ "mouse_key": { "y": -1536 }, "repeat": true }]
+        }
+      ]
+    },
+    {
+      "description": "down",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "down_arrow",
+            "modifiers": {
+              "mandatory": ["left_alt", "left_gui", "left_control"]
+            }
+          },
+          "to": [{ "mouse_key": { "y": 1536 }, "repeat": true }]
+        }
+      ]
+    },
+    {
+      "description": "left",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_arrow",
+            "modifiers": {
+              "mandatory": ["left_alt", "left_gui", "left_control"]
+            }
+          },
+          "to": [{ "mouse_key": { "x": -1536 }, "repeat": true }]
+        }
+      ]
+    },
+    {
+      "description": "right",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_arrow",
+            "modifiers": {
+              "mandatory": ["left_alt", "left_gui", "left_control"]
+            }
+          },
+          "to": [{ "mouse_key": { "x": 1536 }, "repeat": true }]
+        }
+      ]
+    },
+    {
+      "description": "left click",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_shift",
+            "modifiers": {
+              "mandatory": ["left_alt", "left_gui", "left_control"]
+            }
+          },
+          "to": [{ "pointing_button": "button1", "repeat": false }]
+        }
+      ]
+    },
+    {
+      "description": "right click",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "page_down",
+            "modifiers": {
+              "mandatory": ["left_alt", "left_gui", "left_control"]
+            }
+          },
+          "to": [{ "pointing_button": "button2", "repeat": false }]
+        }
+      ]
+    }
+  ]
+}
